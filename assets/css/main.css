@@ -76,7 +76,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f6f7;
+  background-color: #eeeeee;
 }
 
 .section-header {
@@ -709,7 +709,9 @@ section {
   border: 1px solid rgba(82, 86, 94, 0.2);
   background: #fff;
   position: relative;
-  border-radius: 0;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 100;
 }
 
 .constructions .card-item .card-bg {
@@ -717,6 +719,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .constructions .card-item .card-body {
@@ -808,6 +811,12 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+
+.industryscopimg{
+  border-radius: 20px;
+}
+
+
 .features .nav-tabs {
   border: 0;
 }
@@ -2698,4 +2707,19 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Particle
+--------------------------------------------------------------*/
+
+#particles-js {
+	height: min-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: -100;
+}
+.particles-js-canvas-el {
+	position: absolute;
 }
