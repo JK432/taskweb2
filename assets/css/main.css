@@ -749,6 +749,12 @@ section {
   margin: 0;
 }
 
+.constructions .card-item .readmore_link{
+  position: relative;
+  margin-top: 20px;
+  color: var(--color-primary);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1145,6 +1151,12 @@ section {
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
+.arrowbtn{
+  background-color: var(--color-primary);
+  border-radius: 100px;
+  padding: 5px;
+}
+
 .alt-services .img-bg {
   background-size: cover;
   background-position: center center;
@@ -1172,7 +1184,7 @@ section {
 }
 
 .alt-services .icon-box {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .alt-services .icon-box i {
