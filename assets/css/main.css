@@ -1163,6 +1163,12 @@ section {
   min-height: 400px;
 }
 
+.alt-services .img-bg-alt {
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+}
+
 .alt-services h3 {
   font-size: 28px;
   font-weight: 700;
