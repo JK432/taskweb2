@@ -12,7 +12,7 @@
 /* Fonts */
 
 *{
-    scroll-behavior: smooth !important;
+    /* scroll-behavior: smooth !important; */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
@@ -738,6 +738,8 @@ section {
 }
 
 .constructions .card-item h4 {
+  /* position: absolute; */
+  top: 25px;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 15px;
@@ -746,12 +748,23 @@ section {
 
 .constructions .card-item p {
   color: var(--color-secondary);
-  margin: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp:6; 
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  /* margin-bottom: 10px; */
 }
 
 .constructions .card-item .readmore_link{
-  position: relative;
-  margin-top: 20px;
+  /* position: absolute; */
+  /* bottom: 20px; */
+  /* position: relative;*/
+  /* padding-top: 20px;
+  margin-top: 20px;  */
   color: var(--color-primary);
 }
 
@@ -2744,6 +2757,9 @@ section {
   color: var(--color-primary);
 }
 
+.footer-logo{
+  width: 100px;
+}
 /*--------------------------------------------------------------
 # Particle
 --------------------------------------------------------------*/

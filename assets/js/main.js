@@ -326,3 +326,20 @@ document.addEventListener('DOMContentLoaded', () => {
 );
 
 });
+
+// Scroll effect 
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     document.querySelectorAll('a[href*="#"]').forEach(function(anchor) {
+        //         anchor.addEventListener('click', function(event) {
+        //             event.preventDefault();
+
+        //             let targetElement = document.querySelector(this.getAttribute('href'));
+        //             if (targetElement) {
+        //                 window.scrollTo({
+        //                     top: targetElement.offsetTop,
+        //                     behavior: 'smooth'
+        //                 });
+        //             }
+        //         });
+        //     });
+        // });
