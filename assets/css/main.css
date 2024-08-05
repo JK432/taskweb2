@@ -31,7 +31,8 @@ display: none;
 :root {
   --color-default: #364d59;
   --color-primary: #d24141;
-  --color-secondary: #52565e;
+  --color-white: #f6f6f6;
+  --color-grey: #e8e8e8;
 }
 
 /* Smooth scroll behavior */
@@ -706,6 +707,7 @@ section {
 # Constructions Section
 --------------------------------------------------------------*/
 .constructions .card-item {
+  color: var(--color-default) !important;
   border: 1px solid rgba(82, 86, 94, 0.2);
   background: #fff;
   position: relative;
@@ -2092,6 +2094,12 @@ section {
   opacity: 0.9;
 }
 
+
+
+/* -------------------------------------- */
+
+
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -2795,4 +2803,20 @@ section {
 }
 .particles-js-canvas-el {
 	position: absolute;
+}
+
+/* ============================= Grid EFFECT */
+.gridbackground{
+    background-color: #f2f2f2;
+    background-image:        linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%, transparent);  /* height:100%; */
+  background-size:50px 50px;
+}
+
+.splitbackground{
+    background-color: var(--color-white);
+  background-image: -webkit-linear-gradient(30deg, var(--color-white) 50%, var(--color-grey) 50%);
+  /* background-image: url("/assets/img/grid3dt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
