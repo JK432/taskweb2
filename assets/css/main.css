@@ -30,6 +30,7 @@ display: none;
 /* Colors */
 :root {
   --color-default: #364d59;
+  --color-secondary:#364d59;
   --color-primary: #d24141;
   --color-white: #f6f6f6;
   --color-grey: #e8e8e8;
@@ -195,7 +196,8 @@ section {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: #fff;
+  /* color: var(--color-secondary) !important; */
   line-height: 0;
 }
 
@@ -1270,7 +1272,7 @@ section {
 
 .about .our-story {
   padding: 40px;
-  background-color: #f5f6f7;
+  background-color: #dcdcdc;
   border-radius: 20px;
 }
 
@@ -1656,11 +1658,25 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+.service-details{
+  padding-top: 40px !important;
+}
+.service-details .toolimage{
+  /* width: ; */
+  position: relative;
+  width: 100%;
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+  /* margin-top: 80px;
+  margin-bottom: 80px; */
+  
+}
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
   margin-bottom: 20px;
   border-radius: 20px;
+
 }
 
 .service-details .services-list a {
@@ -1738,8 +1754,13 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(149, 157, 165, 0.245) 0px 8px 24px;
   padding: 20px 0 30px 0;
+  border-radius: 25px;
+}
+.contact .formitem{
+  border-radius: 25px;
+   /* box-shadow: rgba(149, 157, 165, 0.245) 0px 8px 24px; */
 }
 
 .contact .info-item i {
@@ -1772,8 +1793,13 @@ section {
 .contact .php-email-form {
   width: 100%;
   background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(149, 157, 165, 0.245) 0px 8px 24px;
   padding: 30px;
+  border-radius: 25px;
+}
+.contact .info-item:hover,.contact .php-email-form:hover{
+box-shadow: rgba(149, 157, 165, 0.489) 0px 8px 24px;
+/* background-color: #515151; */
 }
 
 .contact .php-email-form .form-group {
@@ -1841,7 +1867,9 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-
+.contact iframe{
+  border-radius: 25px;
+}
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
   border: 0;
@@ -1975,7 +2003,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.833);
   position: absolute;
   inset: 0;
 }
@@ -2678,7 +2706,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/footer-bg.jpg") center center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2687,7 +2715,7 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.789);
   position: absolute;
   inset: 0;
 }
@@ -2813,10 +2841,41 @@ section {
 }
 
 .splitbackground{
-    background-color: var(--color-white);
+  background-color: var(--color-white);
   background-image: -webkit-linear-gradient(30deg, var(--color-white) 50%, var(--color-grey) 50%);
   /* background-image: url("/assets/img/grid3dt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
+}
+
+.card-item-test {
+    position: relative;
+    min-height: 300px;
+    background-image: url("/assets/img/constructions-4.jpg");
+    color: var(--color-white);
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure the overlay and content don't overflow the card */
+}
+
+.card-item-test h1 {
+    position: absolute;
+    bottom: 10px; /* Add some spacing from the bottom */
+    left: 10px; /* Add some spacing from the left */
+    z-index: 2; /* Ensure the title appears above the overlay */
+}
+
+.card-overlay-test {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay appears above the background but below the title */
+}
+
+.column-class{
+  /* display: flex; */
 }
