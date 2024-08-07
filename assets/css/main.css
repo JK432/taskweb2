@@ -2003,7 +2003,7 @@ box-shadow: rgba(149, 157, 165, 0.489) 0px 8px 24px;
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.833);
+  background-color: rgba(0, 0, 0, 0.708);
   position: absolute;
   inset: 0;
 }
