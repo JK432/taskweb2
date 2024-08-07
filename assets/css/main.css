@@ -1753,10 +1753,12 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .info-item {
   box-shadow: rgba(149, 157, 165, 0.245) 0px 8px 24px;
   padding: 20px 0 30px 0;
   border-radius: 25px;
+  background-color: white;
 }
 .contact .formitem{
   border-radius: 25px;
