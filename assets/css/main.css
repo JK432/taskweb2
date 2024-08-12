@@ -34,6 +34,7 @@ display: none;
   --color-primary: #d24141;
   --color-white: #f6f6f6;
   --color-grey: #e8e8e8;
+  
 }
 
 /* Smooth scroll behavior */
@@ -2016,6 +2017,13 @@ box-shadow: rgba(149, 157, 165, 0.489) 0px 8px 24px;
   z-index: 2;
 }
 
+.hero .info .container{
+margin-top: 100px !important;
+}
+
+
+
+
 @media (max-width: 768px) {
   .hero .info {
     padding: 0 50px;
@@ -2024,18 +2032,19 @@ box-shadow: rgba(149, 157, 165, 0.489) 0px 8px 24px;
 
 .hero .info h2 {
   color: #fff;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-size: 56px;
   font-weight: 700;
   position: relative;
 }
 
+
 .hero .info h2:after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   display: block;
-  width: 80px;
+  width:500px;
   height: 4px;
   background: var(--color-primary);
   left: 0;
@@ -2880,4 +2889,91 @@ box-shadow: rgba(149, 157, 165, 0.489) 0px 8px 24px;
 
 .column-class{
   /* display: flex; */
+}
+.shadoweffect{
+    /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); */
+    box-shadow: inset 0px 2px -2px 2px rgba(32, 32, 32, 0.7), inset 0px -2px -2px 2px rgba(32, 32, 32, 0.7); 
+
+}
+
+
+/*** Donation Start ***/
+.donation .donation-item {
+  border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.donation .donation-item::after {
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.36);
+    z-index: 2;
+}
+
+
+.donation .donation-item {
+    position: relative; /* Ensure the container has a relative position */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+.donation .donation-item .donation-content {
+    position: absolute;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.615);
+    padding: 20px; 
+    justify-content: end; 
+    bottom: -60px; 
+    left: 0;
+    transition: all 0.5s ease; /* Apply transition to all properties */
+    z-index: 3;
+}
+
+.donation .donation-item:hover .donation-content {
+    bottom: 0px; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.673);
+    transition: all 0.5s ease; /* Apply transition to all properties */
+}
+
+.donation .donation-item .donation-btn, 
+.donation .donation-item .para {
+    visibility: hidden;
+    opacity: 0;
+    height: 20px; /* Start with 0 height */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Smooth transition for height and opacity */
+}
+
+.donation .donation-item:hover .donation-btn, 
+.donation .donation-item:hover .para {
+    visibility: visible;
+    opacity: 1;
+    height: auto; /* Expand smoothly */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Smooth transition for height and opacity */
+}
+
+.donation .donation-item .donation-btn a{
+  background-color: var(--color-primary);
+  border-radius: 20px;
+
+
+}
+.donation-item .donation-content h5{
+  color: #ff4040  !important;
+  /* color: var(--color-primary); */
+    font-weight: bolder !important;
+}
+
+.contentcard{
+  height: 350px;
+  background-color: #059652;
+}
+.imagecard{
+  height: 350px;
+  background-color:#d24141 ;
 }

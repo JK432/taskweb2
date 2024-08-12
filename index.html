@@ -27,6 +27,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -79,7 +80,7 @@
               <li><a href="services/OrientationGyroSurvey.html">Orientation Gyro Survey</a></li>
             </ul>
           </li>
-          <li><a href="projects.html">Projects</a></li>
+          <!-- <li><a href="projects.html">Projects</a></li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -106,40 +107,25 @@
 
     <div id="hero-carousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
 
-      <!-- <div class="carousel-item active">
-        <video autoplay loop muted id="background-video" poster="assets/img/poster.png">
-          <source src="assets/video/vid.mp4" type="video/mp4">
-          browser does not support.
-        </video>
-      </div> -->
-
-
-      <!-- <div class="carousel-item active">
-          <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-            <source src="assets/video/vid.mp4" type="video/mp4" class="carousel-item" />
-          </video>
-      </div> -->
       <div class="carousel-item active" style="background-image: url(assets/img/home/img1.jpg)">
             <div class="info d-flex align-items-center">
               <div class="container">
                 <div class="row justify-content-left">
-                  <div class="col-lg-6 text-left">
+                  <div class="col-lg-7 text-left">
                     <h2 data-aos="fade-down">Pump Down Gyro Services</h2>
-                    <p data-aos="fade-up">Our premium Pump Down service uses fluid pressure to deploy survey tools efficiently into horizontal or deviated wells. This
+                    <p data-aos="fade-up" class="col-lg-10">Our premium Pump Down service uses fluid pressure to deploy survey tools efficiently into horizontal or deviated wells. This
                     method ensures quick, accurate, and reliable wellbore data.</p>
                     <a data-aos="fade-up" data-aos-delay="200" href="#services" class="btn-get-started">Our Services</a>
                   </div>
                 </div>
               </div>
             </div>
-
       </div>
       <div class="carousel-item" style="background-image: url(assets/img/home/img2.jpg)">
-
                     <div class="info d-flex align-items-center">
-                      <div class="container">
+                      <div class="container ">
                         <div class="row justify-content-end">
-                          <div class="col-lg-6 text-end">
+                          <div class="col-lg-6 text-start">
                             <h2 data-aos="fade-down">Wireline Gyro Services</h2>
                             <p data-aos="fade-up">We, Global Leaders of Gyro Services, provide precise wellbore trajectory measurements. Our advanced gyro technology ensures reliable performance in harsh environments, enhancing drilling efficiency
                             with expert support.</p>
@@ -149,9 +135,6 @@
                       </div>
                     </div>
       </div>
-      <!-- <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div> -->
-      <!-- <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div> -->
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -284,7 +267,7 @@
     <!-- End Constructions Section -->
 
     <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services splitbackground">
+    <section id="alt-services" class="alt-services splitbackground shadoweffect">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Featured Tools</h2>
@@ -404,6 +387,77 @@
 
       </div>
     </section><!-- End Alt Services Section -->
+
+<!-- Donation Start -->
+<div class="container-fluid donation py-5">
+  <div class="container py-5">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>At TASK Energy, we enhance well performance with a suite of precise, efficient services. Our expertise ensures
+            maximum efficiency and output
+            for your operations.</p>
+        </div>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="donation-item " data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/donation-1.jpg" class="img-fluid w-100" alt="Image">
+          <div class="donation-content d-flex flex-column">
+            <h5 class="text-uppercase mb-4">Gyro Survey</h5>
+            <a href="#" class="btn-hover-color display-6 text-white mb-4">Wireline Gyro Surveys</a>
+            <!-- <h4 class="text-white mb-4">Protect Environments</h4> -->
+            <div class="para d-flex justify-content-start align-items-center">
+
+            <p class="text-white mb-4">Designed to enhance the
+            precision and efficiency of your drilling operations. Our advanced gyro technology ensures accurate wellbore
+            positioning by reducing risks and optimizing well performance.</p>
+            </div>
+
+            <div class="donation-btn d-flex align-items-center justify-content-start">
+              <a class="btn-hover-bg btn  text-white py-2 px-4" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="donation-item" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/img/service-2.jpg" class="img-fluid w-100" alt="Image">
+          <div class="donation-content d-flex flex-column">
+            <h5 class="text-uppercase text-primary mb-4">Gyro Survey</h5>
+            <a href="#" class="btn-hover-color display-6 text-white mb-4">Drop Down Gyro Survey</a>
+            <!-- <h4 class="text-white mb-4">Protect Environments</h4> -->
+            <div class="para d-flex justify-content-start align-items-center">
+                          <p class="text-white mb-4">Our Drop Down Gyro Survey services are tailored to provide precise and efficient wellbore
+                          surveying, ensuring optimal performance while significantly reducing operational costs.</p>
+            </div>
+
+            <div class="donation-btn d-flex align-items-center justify-content-start">
+              <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="donation-item" data-aos="fade-up" data-aos-delay="500">
+          <img src="assets/img/donation-3.jpg" class="img-fluid w-100" alt="Image">
+          <div class="donation-content d-flex flex-column">
+            <h5 class="text-uppercase text-primary mb-4">Gyro Survey</h5>
+            <a href="#" class="btn-hover-color display-6 text-white mb-4">Pump Down Gyro Survey</a>
+            <!-- <h4 class="text-white mb-4">Protect Environments</h4> -->
+            <div class="para d-flex justify-content-start align-items-center">
+              <p class="text-white mb-4">Delivers precise wellbore surveys efficiently and cost-effectively. Using cutting-edge technology and
+              innovative methods,
+              we ensure accurate wellbore positioning and trajectory data for successful drilling operations.</p>
+            </div>
+            <div class="donation-btn d-flex align-items-center justify-content-start">
+              <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Donation End -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class=" gridbackground features section-bg">
@@ -699,14 +753,14 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Wireline Gyro Surveys</a></li>
+              <li><a href="#">Drop Down Gyro Survey</a></li>
+              <li><a href="#">Pump Down Gyro Survey</a></li>
+              <li><a href="#">Orientation Gyro Survey</a></li>
+              <!-- <li><a href="#">Graphic Design</a></li> -->
             </ul>
           </div><!-- End footer links column-->
-  
+
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Hic solutasetp</h4>
             <ul>
@@ -776,5 +830,9 @@
       })
     </script> -->
 </body>
+
+<script>
+  // ScrollReveal().reveal('.carousel-item')
+</script>
 
 </html>
